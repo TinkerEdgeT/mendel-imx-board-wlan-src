@@ -1,5 +1,5 @@
 KERNEL_SRC ?= /lib/modules/$(shell uname -r)/build
-
+DESTDIR ?= $(KERNEL_SRC)
 KBUILD_OPTIONS := WLAN_ROOT=$(PWD)
 KBUILD_OPTIONS += MODNAME?=wlan
 

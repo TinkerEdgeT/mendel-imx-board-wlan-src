@@ -181,6 +181,8 @@ ifeq ($(CONFIG_X86), y)
 CONFIG_NON_QC_PLATFORM := y
 endif
 
+CONFIG_NON_QC_PLATFORM := y
+
 ifneq ($(CONFIG_MOBILE_ROUTER), y)
 # To enable ESE upload, dependent config
 # CONFIG_QCOM_ESE must be enabled.
