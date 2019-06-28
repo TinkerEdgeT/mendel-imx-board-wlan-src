@@ -6422,7 +6422,7 @@ VOS_STATUS hdd_update_mac_config(hdd_context_t *pHddCtx)
    VOS_STATUS vos_status = VOS_STATUS_SUCCESS;
 
    memset(macTable, 0, sizeof(macTable));
-   status = request_firmware(&fw, WLAN_MAC_FILE, pHddCtx->parent_dev);
+   status = request_firmware_direct(&fw, WLAN_MAC_FILE, pHddCtx->parent_dev);
 
    if (status)
    {
