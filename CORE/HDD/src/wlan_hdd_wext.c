@@ -2012,7 +2012,7 @@ static int __iw_get_name(struct net_device *dev,
 			 char *wrqu, char *extra)
 {
 	ENTER();
-	strlcpy(wrqu, "Qcom:802.11n", IFNAMSIZ);
+	strlcpy(wrqu, "IEEE 802.11", IFNAMSIZ);
 	EXIT();
 	return 0;
 }
